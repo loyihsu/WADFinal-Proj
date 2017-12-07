@@ -6,46 +6,10 @@
 
 //把msgRecords的mongoDB資料庫連結到msgRecords這個伺服器端的Global Variable
 msgRecords = new Mongo.Collection("msgRecords"); //請勿變更此行
-engLexicon = new Mongo.Collection("engLexicon");
+var engLexicon = new Mongo.Collection("engLexicon");
 
 Meteor.startup(function(){
-  //所有在程式啟動時會在伺服器執行的程式碼都會放在這裡
-  var str1 = "What is the weather in Taipei tomorrow?";
-  var str2 = "Is the weather going to be bad in Taipei?";
-  var str3 = "I wonder what the temperature will be in Taipei tomorrow."
-  var regexp = /(weather|temperature).*in (\w+)/ig;
-
-  console.log("Regexp: "+str1.match(regexp));
-  console.log("Regexp: "+str2.match(regexp));
-  console.log("Regexp: "+str3.match(regexp));
-  /*engLexicon.remove({});
-
-  var lexiconList = Assets.getText("engLexicon_1000.csv");
-
-  if (lexiconList.indexOf("\r\n")> -1)
-  {
-    lexiconList.replace(/\r\n/g, "\n");
-  }
-
-  lexiconList = lexiconList.split("\n");
-
-  for (i = 0; i < lexiconList.length; i++)
-  {
-      lexiconList[i] = lexiconList[i].split(",");
-  }
-  var colNames = lexiconList[0];
-
-  for (row = 1; row < lexiconList.length; row++)
-  {
-    var word = {};
-    for (col = 0; col < lexiconList[row].length; col++)
-    {
-      var colName = colNames[col];
-      word[colName] = lexiconList[row][col];
-    }
-    engLexicon.insert(word);
-    //console.log(engLexicon.findOne({}));
-  }*/
+  loadEngLexicon(engLexicon);
 });
 
 //所有大腦(伺服器)的功能都會在這裡定義
@@ -84,7 +48,6 @@ var processMsg = function(msg) {  //請勿變更此行
   var emotion = "";
   //「以下」是你可以編輯的部份，請將你的ELIZA處理訊息的核心程式碼放在以下的段落內
 
-
   processResults = socialResponse(msg);
   emotion = emotionChecker(msg);
   msgWordsPOS = posIdentifier(msg, engLexicon);
@@ -97,6 +60,11 @@ var processMsg = function(msg) {  //請勿變更此行
   if (processResults === "")
   {
     processResults = POSSearch(msg, engLexicon);
+  }
+
+  if (processResults === "")
+  {
+    processResults = weatherInfo(msg);
   }
 
   if (processResults === "")
