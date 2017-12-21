@@ -5,23 +5,39 @@
 -->
 
 <head>
-  <title>My ELIZA</title>
+  <title>ELIZA: A CHAAAAAAAAAAATBOT</title>
 </head>
 
 <body>
-  <center>
-    <h1>This is my ELIZA!</h1>
-    <form>
-      <p>
-        <textarea id = "conversationBox" rows = "20" cols = "80" readOnly>{{allMsg}}</textarea>
-      </p>
-      <p>
-        <input type = "text" id = "myMsg" size = "80" placeholder = "Enter Your Message" />
-      </p>
-      <p>
-        <input type = "submit" id = "submitMsg" value = "Submit" />
-        <input type = "reset" id = "resetMsg" value = "Reset" />
-      </p>
-    </form>
-  </center>
+    <div id="titleSection">
+      ELIZA: A CHAAAAAAAAAAATBOT
+    </div>
+    <div id="contentSection">
+      <p id="introSection">
+        <br>
+        This is <span class="highlight">ELIZA</span>. Don't fall in love with me.<br><br>
+        <a href="https://en.wikipedia.org/wiki/ELIZA" target="_blank">ELIZA's Story on Wikipedia</a>
+        <br><br>
+        <a href="javascript: hideIntro();">Dismiss</a>
+        <br><br>
+      </p><br>
+      <form>
+        <p>
+          <textarea id = "conversationBox" readOnly>{{allMsg}}</textarea>
+        </p>
+        <p>
+          <input type = "text" id = "myMsg" size = "80" placeholder = "Enter Your Message" />
+        </p>
+        <p>
+          <input type = "submit" id = "submitMsg" value = "Submit" />
+          <input type = "reset" id = "resetMsg" value = "Reset" />
+        </p>
+      </form>
+  </div>
+
+  <div id = "submittingMsg">
+    <div id = "submittingMsgContent">
+      Submitting your message...
+    </div>
+  </div>
 </body>

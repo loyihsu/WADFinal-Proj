@@ -41,7 +41,13 @@ chooseRandomResponse = function(msg, msgWordPOS, emotion, engLexicon) {
   {
     finalChoice = finalChoice.replace("%w%", synonym);
   } else {
-    finalChoice = finalChoice.replace("%w%", "this");
+
+    if (finalChoice.indexOf("%w%") == 0)
+    {
+      finalChoice = finalChoice.replace("%w%", "This");
+    } else {
+      finalChoice = finalChoice.replace("%w%", "this");
+    }
   }
 
   return finalChoice;

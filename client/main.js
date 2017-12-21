@@ -27,8 +27,9 @@ Template.body.helpers({
         //allMsgs[index].speaker = 這筆訊息的說話者
         //allMsgs[index].msg = 這筆訊息的內容
         //在最後加上"\n"這個代表換行的字串
+
         msgTexts = msgTexts+
-                    allMsgs[index].speaker+': '+allMsgs[index].msg+'\n';
+                    allMsgs[index].speaker+': '+allMsgs[index].msg + "\n\n";
       }
     }
     //在allMsgs陣列長度不是大於0的時候，代表資料庫中沒有任何訊息
@@ -50,6 +51,10 @@ Template.body.events({
     //event.preventDefault()代表這個事件我們不要執行預設的HTML功能，避免每次按
     //Submit的按鈕都會重新讀取網頁
     event.preventDefault();
+
+    document.getElementById("submittingMsg").style.display = "block";
+    setTimeout(hideMsg, 2000);
+
     //建立一個變數myMsg儲存輸入在網頁中id=myMsg物件的內容(value)
     var myMsg = document.getElementById("myMsg").value;
     //把網頁中id=myMsg的內容設定為一個空的字串
@@ -67,3 +72,13 @@ Template.body.events({
     Meteor.call("resetELIZA");
   }
 });
+
+var hideMsg = function()
+{
+  document.getElementById("submittingMsg").style.display = "none";
+}
+
+hideIntro = function()
+{
+  document.getElementById("introSection").style.display = "none";
+}
