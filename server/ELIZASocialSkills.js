@@ -16,12 +16,16 @@ var greetingReplys = [
                       ];
 
 var farewareReplys = [
-                      "See you soon!", "See you later!", "Cheers!", "Bye bye!", "Peace!"
+                      "See you soon!", "See you later!", "Cheers!", "Bye bye!", "Peace!", "See ya!", "See you!", "Goodbye"
                       ];
 
 var apologyReplys = [
                      "That's okay.", "Don't worry about it.", "Don't sweat.", "Not a big deal.", "Don't be.", "No biggie."
-                      ];
+                     ];
+
+var replyToHowRU = [
+                    "I'm fine, thank you! And you?", "I am good. And you?", "Not bad. And you?"
+];
 
 
 socialResponse = function(msg)
@@ -60,6 +64,11 @@ socialResponse = function(msg)
     
     if(responseType === "greetings")
     {
+        if (msg.match(/(How).* (you)/ig))
+        {
+            var u = randomNum(replyToHowRU.length,0);
+            return replyToHowRU[u];
+        }
         var u = randomNum(greetingReplys.length,0);
         return greetingReplys[u];
     } else if (responseType === "farewells")
