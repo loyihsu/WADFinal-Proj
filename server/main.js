@@ -11,7 +11,7 @@ nGramDB = new Mongo.Collection("nGramDB");
 
 Meteor.startup(function(){
                loadEngLexicon(engLexicon);
-               loadTrainingData();
+               //loadTrainingData();
                });
 
 //所有大腦(伺服器)的功能都會在這裡定義
@@ -53,6 +53,11 @@ var processMsg = function(msg) {  //請勿變更此行
     processResults = socialResponse(msg);
     emotion = emotionChecker(msg);
     msgWordsPOS = posIdentifier(msg, engLexicon);
+    
+    if (processResults == "")
+    {
+        processResults = dirtyWordDetector(msg);
+    }
     
     if (processResults === "")
     {

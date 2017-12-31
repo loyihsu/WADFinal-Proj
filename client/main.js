@@ -52,8 +52,8 @@ Template.body.events({
     //Submit的按鈕都會重新讀取網頁
     event.preventDefault();
 
-    document.getElementById("submittingMsg").style.display = "block";
-    setTimeout(hideMsg, 2000);
+    //document.getElementById("submittingMsg").style.display = "block";
+    //setTimeout(hideMsg, 2000);
 
     //建立一個變數myMsg儲存輸入在網頁中id=myMsg物件的內容(value)
     var myMsg = document.getElementById("myMsg").value;
