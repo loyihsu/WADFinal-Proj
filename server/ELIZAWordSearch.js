@@ -8,17 +8,12 @@ wordSearch = function(msg, engLexicon) {
     if (wordSearchMatch)
     {
         var allMatches;
-        console.log(wordSearchMatch);
         var wds = wordSearchMatch[1];
         
         if (wds.match(/\d/g))
         {
             number = eval(wds);
-        } else {
-            // deal with texts
         }
-        
-        console.log(number);
         
         if (msg.indexOf("verb") > -1)
         {
@@ -35,22 +30,50 @@ wordSearch = function(msg, engLexicon) {
         {
             allMatches = allMatches.fetch();
             
-            wordSearchResult += "There you go: ";
-            
-            for(i = 0; i < 10; i++)
+            if (allMatches.length <= number)
             {
-                var randomNumber = Math.floor(Math.random() * allMatches.length);
-                wordSearchResult += allMatches[randomNumber].Word;
-                if (i < 8)
+                wordSearchResult = "Well... I don't know that much words!";
+            } else if (number != 0) {
+                wordSearchResult += "There you go: ";
+                
+                if (number >= 3)
                 {
-                    wordSearchResult += ", ";
-                } else if (i == 8) {
-                    wordSearchResult += ", and "
-                } else if (i == 9) {
+                    for(i = 0; i < number; i++)
+                    {
+                        var randomNumber = Math.floor(Math.random() * allMatches.length);
+                        wordSearchResult += allMatches[randomNumber].Word;
+                        
+                        if (i <= number-3)
+                        {
+                            wordSearchResult += ", ";
+                        } else if (i == number - 2) {
+                            wordSearchResult += ", and "
+                        } else if (i == number - 1) {
+                            wordSearchResult += ".";
+                        }
+                    }
+                } else if (number == 2){
+                    for (i = 0; i < number; i++)
+                    {
+                        var randomNumber = Math.floor(Math.random() * allMatches.length);
+                        wordSearchResult += allMatches[randomNumber].Word;
+                        
+                        if (i == number - 2) {
+                            wordSearchResult += " and "
+                        } else if (i == number - 1) {
+                            wordSearchResult += ".";
+                        }
+                    }
+                } else if (number == 1)
+                {
+                    var randomNumber = Math.floor(Math.random() * allMatches.length);
+                    wordSearchResult += allMatches[randomNumber].Word;
+                    
                     wordSearchResult += ".";
                 }
+            } else {
+                wordSearchResult = "";
             }
-            
         } else {
             wordSearchResult = "Sorry, I got nothing for you.";
         }

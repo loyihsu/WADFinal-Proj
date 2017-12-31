@@ -1,12 +1,12 @@
 var randomResponses = {
   neutral: [
-    "Could you tell me more about %w%?", "Really? And then?"
+    "Could you tell me more about %w%?"
   ],
   emotional: [
     "You seem a bit emotional when talking about %w%.", "Keep calm and tell me more about %w%."
   ],
   suspicious: [
-    "%w% is a very tricky thing.", "Are you really sure about %w%?"
+    "%w% is a very tricky thing."
   ]
 };
 

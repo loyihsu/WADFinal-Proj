@@ -56,6 +56,11 @@ var processMsg = function(msg) {  //請勿變更此行
     
     if (processResults == "")
     {
+        processResults = specialOccasion(msg);
+    }
+    
+    if (processResults == "")
+    {
         processResults = dirtyWordDetector(msg);
     }
     
