@@ -9,7 +9,7 @@ specialOccasion = function(msg)
 {
     thisMsg = msg.toLowerCase();
     
-    var cur = new Date(2017, 11, 24);
+    var cur = new Date();
     
     var cur_Date = cur.getDate();
     var cur_Month = cur.getMonth() + 1;
