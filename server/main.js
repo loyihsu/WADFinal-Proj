@@ -81,6 +81,11 @@ var processMsg = function(msg) {  //請勿變更此行
     
     if (processResults === "")
     {
+        processResults = calculator(msg);
+    }
+    
+    if (processResults === "")
+    {
         processResults = chooseRandomResponse(msg, msgWordsPOS, emotion, engLexicon);
     }
     
