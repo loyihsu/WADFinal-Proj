@@ -9,13 +9,14 @@ specialOccasion = function(msg)
 {
     thisMsg = msg.toLowerCase();
     
-    var cur = new Date();
+    var cur = new Date(2017, 11, 24);
     
     var cur_Date = cur.getDate();
     var cur_Month = cur.getMonth() + 1;
     
     if (thisMsg.indexOf("merry christmas") > -1)
     {
+        
         var Christmas = specialOccasions["Christmas"];
         
         if (cur_Month == Christmas.month && cur_Date == Christmas.date)
@@ -33,18 +34,25 @@ specialOccasion = function(msg)
         } else if (cur_Month < Christmas.month - 7) {
             return "Well... Merry... LATE Chritmas?";
         }
+        
     } else if (thisMsg.indexOf("happy new year") > -1)
     {
+        
+        var Christmas = specialOccasions["Christmas"];
         var NewYear = specialOccasions["NewYear"];
         
         if (cur_Month == NewYear.month && cur_Date == NewYear.date)
         {
             return "Happy New Year!";
+        } else if (cur_Month == Christmas.month)
+        {
+            return "It's a little early, but Happy New Year!"
         } else if (cur_Month < NewYear.month + 5) {
             return "A late happy new year... I like it, haha! Thanks!";
         } else if (cur_Month >= NewYear.month + 5) {
             return "Happy... OLD year!";
         }
+        
     }
     
     return "";
