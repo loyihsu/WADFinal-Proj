@@ -14,6 +14,11 @@ specialOccasion = function(msg)
     var cur_Date = cur.getDate();
     var cur_Month = cur.getMonth() + 1;
     
+    if (thisMsg.match(/X.?mas/i))
+    {
+        thisMsg = thisMsg.replace(/X.?mas/i, "christmas");
+    }
+    
     if (thisMsg.indexOf("merry christmas") > -1)
     {
         
