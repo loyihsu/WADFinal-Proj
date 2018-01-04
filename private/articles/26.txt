@@ -1,0 +1,21 @@
+Expansion of artificial intelligence in financial services, healthcare, transportation and other fields poses new challenges to governments charged with regulating those industries, according to an executive with Google who is a pioneer in the field of machine learning.
+
+"It's going to be a big issue," Geoffrey Hinton, a vice president with Alphabet Inc's Google, said at a Reuters Newsmaker event in Toronto on Monday.
+
+
+Hinton is a pioneer in the booming field of deep learning, which uses programs known as neural networks to mimic the way humans learn to perform complex tasks including recognising images, sounds and languages.
+
+Hinton led a group of scientists at the University of Toronto who developed some of the key algorithms that neural networks use to crunch massive quantities of data, training themselves to identify patterns so they can mimic the way the human brain would perform tasks such as driving a car, analysing potential financial trades or using medical images to diagnose diseases.
+
+The field has boomed since 2012, when advances in neural networks enabled Google to add voice recognition to Android mobile devices and researchers used it to cut error rates in optical recognition compared with earlier technology, he said.
+
+
+Neural networks teach themselves to perform complex operations, making it impossible for their developers to tell government regulators exactly how those systems work, Hinton said.
+
+"All you need is lots and lots of data and lots of information about what the right answer is, and you'll be able to train a big neural net to do what you want," he said.
+
+Deep learning is close to revolutionizing the way certain diseases are treated. Hinton said neural networks that have studied millions of medical images will be able to make more accurate diagnoses than some physicians.
+
+He expects mobile apps to be created that use neural networks to examine images of skin lesions, advising users when to see a doctor for a possible biopsy.
+
+"We'd like to make medicine better," Hinton said.

@@ -1,0 +1,12 @@
+Here's your chance to be the first person on your block to have a house with artificial intelligence. 
+All you need is $45 and the patience to put together a weird cardboard kit that Google announced on Friday.
+Google's got a thing for cardboard gadgets — it made headlines a few years ago when it released a cardboard headset that transformed your phone into a rudimentary virtual reality device. 
+This time, Google's cardboard/electronic hybrid is an AI-powered camera that can learn all sorts of useful stuff. It can learn to distinguish between your pets, and learn how to identify various types of plant and animal species. It can tell you when your car was in the driveway, and when someone else's pulled up. 
+It can become your personal security assistant, essentially, or it can help monitor the various animals roaming around your house — be they dog, cat, or human.
+The idea is to enable so-called "machine learning" — electronic devices that "learn" from experience — on a small scale. Paring this concept with a camera enables vision-based machine learning, in the same way you might learn from seeing something with your eyes. 
+
+It's even got a weird name: the "Google AIY Vision Kit."
+That's largely because this isn't a device aimed at casual electronics consumers. It's for people that like to tinker. "Vision Kit is a do-it-yourself build," Google's director of AIY projects Billy Rutledge wrote in the announcement blog post. 
+To that end, you have to buy several other components to make the Vision Kit work — they total about $45 to $60, depending on what you get. These components are literal circuitry, so you have to be pretty comfortable with electronics.
+And even after you've done that, this is a DIY project for people who are either willing to learn a lot about Raspberry Pi, the computing platform based on plug-and-play circuit boards, or those who already have that knowledge. If you're not familiar with what Raspberry Pi is, chances are that Google's Vision Kit isn't for you.
+That said, if you're at all inclined towards learning more about how electronics work, this is a great way to start. The AIY Vision Kit will be sold through Micro Center starting soon — you can pre-order one right here.

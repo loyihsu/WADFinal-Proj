@@ -1,0 +1,38 @@
+More than 60 years after a space race rivalry with the Soviet Union ushered in a new era of ballistic missile development, the US is facing another "Sputnik moment" amid a rapidly escalating international competition over artificial intelligence, according to former Deputy Secretary of Defense Robert Work. 
+The idea that rapid advances in artificial intelligence will define the next generation of warfare -- a concept known as the "Third Offset Strategy" -- was first articulated by former Secretary of Defense Chuck Hagel in 2014.
+
+Possible AI applications for the military include: creating more nimble systems, possibly at lower cost; developing more effective training systems; software that processes mountains of data from surveillance systems or for "pattern-of-life" surveillance; improved facial recognition capabilities; war games support and automated combat in so-called manned-unmanned operations, according to a September report from the RAND Corporation. 
+But a new report published Wednesday and provided exclusively to CNN by Work and Govini, a data and analytics firm that conducts government analysis, warns that the US military must now decide if it wants to "lead the coming revolution, or fall victim to it" amid emerging challenges from China and Russia. 
+"This stark choice will be determined by the degree to which the Department of Defense (DoD) recognizes the revolutionary military potential of AI and advanced autonomous systems," the report said.
+Specifically, the White House and Pentagon must determine the extent to which the US will ramp up research and development in technologies associated with artificial intelligence -- including advanced computing, artificial neural networks, big data, machine learning, unmanned systems and robotics, it said. 
+The US must also determine a national strategy for how aggressively it will develop new systems, operational concepts and organizational constructs that exploit artificial intelligence advancements in warfare, according to the report.
+An important part of that strategy relates to "autonomy" which results "from delegation of a decision to an authorized entity to take action within specific boundaries," Work told CNN. 
+The technology
+While critics have often warned against the development of autonomous offensive weaponry for fear of losing operational control, Work told CNN that the US pursuit of "narrow AI" will always prioritize human control but allow the machine to "independently compose and select among different courses of action to accomplish assigned goals based on its knowledge and "They are worried about the Terminator, but the US view is more like the Iron Man," Work said in reference to the Marvel superhero who is a man equipped with a powerful and adaptable suit of armor. 
+The US has already begun to apply elements of AI to military platforms and strategy -- a move perhaps no more evident than in its investment in the $400 billion F-35 Joint Strike Fighter. 
+Combining an array of sensors and software used to quickly collect data and interpret data, the F-35 "is the key example of human elaboration," Work told CNN. 
+"It sucks up data and portrays that to the pilot in a way they couldn't have done on their own," he added, calling the aircraft a "perfect example of human-machine collaboration" that should be applied to other military platforms. 
+But despite some success in implementing AI technology to date, Work told CNN that he does not "don't believe our national response is nearly good enough to this point."
+The race
+Both China and Russia have recently highlighted the importance of artificial intelligence to the future of the global economy and military power. 
+Speaking to students during a national "open lesson" in September, Russian President Vladimir Putin said the country that takes the lead in the sphere of computer-based artificial intelligence will rule.
+"Artificial intelligence is the future not only of Russia but of all of mankind," said Putin. "There are huge opportunities, but also threats that are difficult to foresee today."
+The words of the Russian President echo what scientists in Russia and around the world have been mulling over for quite some time.
+Work on developing drones and vehicles for military and civilian usage is well under way in Russia, according to state media.
+The Russian military is also developing robots, anti-drone systems, and cruise missiles that would be able to analyze radars and make decisions on the altitude, speed and direction of their flight, according to state media.
+And in July, the Chinese government published a detailed road map outlining a national plan to prioritize the development and application of AI -- a move Work said he considers a "Sputnik moment."
+"Artificial intelligence has become the new focus of international competition. Artificial intelligence is the strategic technology that leads the future," the Chinese government publication said.
+"The major developed countries in the world regard the development of artificial intelligence as a major strategy to enhance their national competitiveness and safeguard their national security," it added. 
+China's hopes to lead the world in AI technologies by directly linking defense and commercial development. 
+The funding
+While DOD and Silicon Valley have recently invested in AI research and development, relying on American commercial research and development is not going to be enough, according to Work.
+The US has lacked a clear plan to keep pace with foreign rivals despite predictions that AI "has the potential to be a transformative national security technology, on a par with nuclear weapons, aircraft, computers, and biotech," according to a recent study by Greg Allen of Harvard's Belfer Center for Science and International studies. 
+But according to Work and Govini, Wednesday's report aims to help build the foundation of a national response to, what they view, as a clear challenge by foreign powers. 
+By providing an analysis of government spending on key components of AI between 2012 and 2017, the report provides guidance for defense leaders and the White House on how the US should respond to challenges from China and others, Work said.
+And while the report generally concludes that DOD is "putting its money where its mouth is" when it comes to the Third Offset Strategy, Work told CNN that there is still "a long way to go."
+The report's analysis of unclassified government spending on AI over the last five years indicates that DOD is focusing on collecting data and applying it to two primary components of the offset strategy: virtual reality (simulations and training technology) and computer vision (the data that tells a system what to strike and not to strike). 
+While important foundational elements of artificial intelligence, the US must begin to prioritize measures toward applying those advancements toward mission concepts, according to Matt Hummer of Govini. 
+DOD should increase its investment in "advanced computing" technology -- which represents the lynchpin for broader application -- and analytical technology -- which is used to display information to a human operator, he said.
+Further development of the Cloud -- a critical part of increasing processing speed -- is also an area the US should emphasize, he said. 
+Ultimately, an emphasis on prioritizing artificial intelligence spending is going to "require a national response led from the White House," according to Work. 
+"This is designed, I hope, to not only help DOD leaders to think about what to invest in but help the White House to think about broad contours of a national response," he said.

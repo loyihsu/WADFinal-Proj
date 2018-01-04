@@ -1,0 +1,18 @@
+One sector of business seemingly ripe for automation and the application of artificial intelligence is the call center. The adoption of ‘thinking’ computers could lead to a reduced role for the human operator.
+There are various different forms of artificial intelligence. The aspects of greatest relevance to the call center manager are Natural Language Processing and Speech Recognition; these provide the basis for platforms that allow for business-to-customer or business-to-business interactions through the call center model. 
+
+According to Erni Medeovic, who is a Technical Architect for the Patent Transformation Project, the past five years have seen a steady rise in the use of artificial intelligence for the call center model. This includes analyzing big data sets and making use of predictive analytics, so that automated and personalized customer services can be improved. 
+
+Interpreting big data 
+
+With these key metrics, artificial intelligence technology can be used to interpret big data to identify customer browsing patterns, purchase history, recent access to customer devices, and most visited webpages. Moreover, predictive dialers can help to fuel sales through smart lead management, such as connecting call center operatives directly to the most receptive customers at the optimal business times. 
+
+According to Medeovic effective artificial intelligence can collect and process customer preferences and automate proactive outreach. Moreover, intelligent software can assess when a customer’s tone varies and alert a call center supervisor to join the call. Here artificial intelligence software has been developed that can listen into calls and decipher the business-to-customer process. 
+
+Predictive voice analytics 
+
+A further application, for the call center manager, is being able to receive a report on employee behavior, where the artificial intelligence platform runs an analysis on the tone of the employee and the types of language used. This, through feedback, can lead to an improved customer experience. This is achieved through predictive voice analytics. 
+
+Through predictive analysis, the performance of a call center operator is assessed by establishing patterns. This can be particular useful for determining negative customer interactions. Some artificial intelligence systems can go as far as to assess operator performance in terms of levels of enthusiasm and confidence. Where these fall short of management expectations, the employee can be retrained. 
+
+A related area that is important is with determining customer satisfaction levels. The biggest frustration for customers is being kept waiting for a long time. Call centers need to analyze and respond to this, for most businesses are reliant upon a customer returning: poor service greatly diminishes this likelihood. 

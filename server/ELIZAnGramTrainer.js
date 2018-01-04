@@ -1,3 +1,87 @@
+produceAIArticle = function (msg)
+{
+  var AIMsgRegExp = /(what|how|tell me).* AI/ig;
+  if (msg.match(AIMsgRegExp) !== null)
+  {
+    return generateRandomAIArticle();
+  } else {
+    return "";
+  }
+};
+
+var generateRandomAIArticle = function() {
+  var randomAIArticle = "", nGramNum = 300;
+  var allInitialTrigrams = nGramDB.find({trigram1: "#"}).fetch();
+
+  var initialTrigram = randomNGramSelection(allInitialTrigrams);
+  randomAIArticle = initialTrigram.trigram1+ " " + initialTrigram.trigram2 + " " + initialTrigram.trigram3 + " ";
+
+  var newNGram1 = initialTrigram.trigram2;
+  var newNGram2 = initialTrigram.trigram3;
+
+  var selectedNewNGram;
+
+  for (wd = 1; wd <= nGramNum; wd++)
+  {
+    var trigramMatches = nGramDB.find({trigram1: newNGram1, trigram2: newNGram2}).fetch();
+
+    if (trigramMatches.length > 0)
+    {
+      selectedNewNGram = randomNGramSelection(trigramMatches);
+      randomAIArticle += selectedNewNGram.trigram3 + " ";
+      newNGram1 = newNGram2;
+      newNGram2 = selectedNewNGram.trigram2;
+    } else {
+      var bigramMatches = nGramDB.find({bigram1: newNGram2}).fetch();
+
+      if (bigramMatches > 0)
+      {
+        selectedNewNGram = randomNGramSelection(bigramMatches);
+        randomAIArticle += selectedNewNGram.bigram2 + " ";
+        newNGram1 = newNGram2;
+        newNGram2 = selectedNewNGram.bigram2;
+      } else {
+        var monogramMatches = nGramDB.find({type: "monogram"}).fetch();
+        selectedNewNGram = randomNGramSelection(monogramMatches);
+        randomAIArticle += selectedNewNGram.monogram + " ";
+        newNGram1 = newNGram2;
+        newNGram2 = selectedNewNGram.monogram;
+      }
+    }
+  }
+
+  var trigramMatches = nGramDB.find({trigram1: newNGram2, trigram3: "#"}).fetch();
+  if (trigramMatches.length > 0)
+  {
+    selectedNewNGram = randomNGramSelection(trigramMatches);
+    randomAIArticle += selectedNewNGram.trigram2 + " #";
+  } else {
+    randomAIArticle += " #";
+  }
+
+  return randomAIArticle;
+}
+
+var randomNGramSelection = function(NGrams) {
+  var totalRawFreq = 0;
+  for (NGram = 0; NGram < NGrams.length; NGram++)
+  {
+    totalRawFreq += NGrams[NGram].rawFreq;
+  }
+
+  var randomNum = Math.random()*totalRawFreq;
+  totalRawFreq = 0;
+
+  for (newNGram = 0; newNGram < NGrams.length; newNGram++)
+  {
+    totalRawFreq += NGrams[newNGram].rawFreq;
+    if (totalRawFreq > randomNum)
+    {
+      return NGrams[newNGram];
+    }
+  }
+}
+
 loadTrainingData = function()
 {
   nGramDB.remove({});
@@ -9,6 +93,7 @@ loadTrainingData = function()
 
   for (fileNum = 1; fileNum <= 10; fileNum++)
   {
+    console.log("Loading article " + fileNum);
     filename = fileNum + ".txt";
     articleString = Assets.getText("articles/"+filename);
 
@@ -19,6 +104,7 @@ loadTrainingData = function()
     articleString = "# " + articleString + " #";
     articleString = articleString.split(" ");
     processNGram(articleString);
+
   }
   // calculateNGramFreq();
 }

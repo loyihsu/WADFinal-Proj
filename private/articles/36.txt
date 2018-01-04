@@ -1,0 +1,21 @@
+Facebook says it has successfully tested a computer program that can help keep users from taking their own lives.
+The social media network now says it will expand the use of the pattern recognition software to other countries.
+Facebook began testing the software in the United States in March.
+The software is considered an example of artificial intelligence. In February, Facebook chief Mark Zuckerberg wrote in a statement that artificial intelligence could be used to help keep people safe.
+The software scans messages on Facebook for comments that could be signs that a person intends to harm themselves. Facebook has not released any of the technical details about the program. But, the company did say that it looks for phrases such as “Are you ok?” and “Can I help?”
+If the software finds the signs it is looking for, it alerts a team of Facebook workers who specialize in dealing with such reports.
+The system suggests resources to the user or to friends of the person such as a telephone help line. Facebook workers sometimes call local officials to take action.
+Facebook said it tries to have specialists available at any hour to call officials in local languages.
+Guy Rosen is Facebook’s vice president for product management. He posted a description of the program on the Facebook website on Monday. He said the company was expanding use of the software because the tests were successful.
+He said first responders checked on people more than 100 times after Facebook’s software raised alarms. Reuters reported that Rosen said, “Speed really matters. We have to get help in real time.”
+An answer to live video incidents
+Facebook started to use the new software after the launch of live video broadcasting in 2016. A number of incidents took place in which people were live broadcasting violent acts including suicides and murders.
+In May, the company said it would hire 3,000 people to monitor video and other content.
+Rosen did not say where Facebook would use the software outside the U.S. He said, in time, it would be used around the world except in the European Union where privacy laws would likely place limits on its use.
+Google is another technology company that tries to prevent suicides by monitoring users. The Google search engine will show a hot line telephone number if certain searches are made.
+Facebook uses information from its users to target advertising. The company has not announced in the past that it scans messages for harmful behavior.
+However, the company says it does look for suspicious comments between children and adult sex criminals. Facebook says sometimes it contacts officials when it finds targeted discussions.
+Ryan Calo is a law professor at the University of Washington. He says scanning people’s discussions is harder to justify in other situations.
+Calo said, “Once you open the door, you might wonder what other kinds of things we would be looking for.”
+Rosen declined to comment about whether Facebook is considering pattern recognition software to fight non-sex related crimes.
+The company announced that it was using technology and other resources to help save lives on September 7, World Suicide Prevention day.
