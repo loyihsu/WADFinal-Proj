@@ -5,20 +5,61 @@
 -->
 
 <head>
-  <title>ELIZA: A CHAAAAAAAAAAATBOT</title>
+  <title>ELIZA: A CHATBOT</title>
 </head>
 
 <body>
-    <div id="titleSection">
-      ELIZA: A CHAAAAAAAAAAATBOT
-    </div>
+
+
+      <button id= "coolbutton" onclick="typeWriter()">E L I Z A</button>
+
+      <p id="demo"></p>
+
+      <script>
+      var i = 0;
+      var txt = 'I am a chatbot. Please like me?';
+      var speed = 50;
+
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("demo").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+      </script>
+      <div id="outercircle1"></div>
+      <div id="circle1"></div>
+      <div id="outercircle2"></div>
+      <div id="circle2"></div>
+      <div id="outercircle3"></div>
+      <div id="circle3"></div>
+
+<div class="container">
+  <img src="//i.imgur.com/PnYjKMu.jpg" alt="stars1" height="100px" width="100px">
+
+  <!--<div class="overlay">
+
+  </div>-->
+</div>
+
+<div class="vl"></div>
+
+<div class="container2">
+  <img src="//i.imgur.com/RkYcAxg.jpg" alt="stars2" height="100px" width="100px">
+  <!--<div class="overlay2">
+
+  </div>-->
+</div>
+
+
     <div id="contentSection">
       <p id="introSection">
         <br>
-        This is <span class="highlight">ELIZA</span>. Don't fall in love with me.<br><br>
+        Just...don't fall in love with me.<br><br>
         <a href="https://en.wikipedia.org/wiki/ELIZA" target="_blank">ELIZA's Story on Wikipedia</a>
         <br><br>
-        <a href="javascript: hideIntro();">Dismiss</a>
+        <a href="javascript: hideIntro();">X</a>
         <br><br>
       </p><br>
       <form>
