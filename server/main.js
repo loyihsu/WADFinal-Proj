@@ -54,6 +54,16 @@ var processMsg = function(msg) {  //請勿變更此行
     emotion = emotionChecker(msg);
     msgWordsPOS = posIdentifier(msg, engLexicon);
     
+    if (processResults === "")
+    {
+        processResults = jokeResponse(msg);
+    }
+    
+    if (processResults === "")
+    {
+        processResults = PersonalInformationResponse(msg);
+    }
+    
     if (processResults == "")
     {
         processResults = specialOccasion(msg);

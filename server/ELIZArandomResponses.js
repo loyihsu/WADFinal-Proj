@@ -1,13 +1,19 @@
 var randomResponses = {
-  neutral: [
-    "Could you tell me more about %w%?"
-  ],
-  emotional: [
-    "You seem a bit emotional when talking about %w%.", "Keep calm and tell me more about %w%."
-  ],
-  suspicious: [
-    "%w% is a very tricky thing."
-  ]
+neutral: [
+          "Could you tell me more about %w%?",
+          "(❁´ω`❁)Come on~ tell me more about you.",
+          "( ^ω^)Could you tell me mor about this shitty thing?",
+          "How abot let's talk about the weather today?"
+          ],
+emotional: [
+            "You seem a bit emotional when talking about %w%.",
+            "Keep calm and tell me more about %w%.",
+            "hey dudem, don't be so emotional(☉д⊙)",
+            "Just calm down~ Let me tell you a joke ..... A naked women robbed a bank. Nobody could remember her face."
+            ],
+suspicious: [
+             "%w% is a very tricky thing."
+             ]
 };
 
 chooseRandomResponse = function(msg, msgWordPOS, emotion, engLexicon) {
