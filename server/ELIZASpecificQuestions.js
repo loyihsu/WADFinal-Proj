@@ -6,7 +6,9 @@ replyToROBOT = [
 
 replyToHOWDOESITWORK = [
                         "It just works!",
-                        "Hmmmm, it works well!"
+                        "Hmmmm, it works well!",
+                        "00001010110010010010101001010000",
+                        ""
                         ];
 
 replyToDOYOULIKE = [
@@ -36,7 +38,7 @@ specificQuestions = function(msg)
     
     if (msg.toUpperCase().indexOf("DO YOU LIKE") > -1)
     {
-        if (msg.toUpperCase().indexOf("LOYI") > -1 || msg.toUpperCase().indexOf("ALYSSA") > -1 || msg.toUpperCase().indexOf("TEACHER") > -1 || msg.toUpperCase().indexOf("TSUNG-YING") > -1 || msg.toUpperCase().indexOf("PROFESSOR") > -1 || msg.toUpperCase().indexOf("TSUNG-YING") > -1 || msg.toUpperCase().indexOf("VICTOR") > -1)
+        if (msg.toUpperCase().indexOf("LOYI") > -1 || msg.toUpperCase().indexOf("ALYSSA") > -1 || msg.toUpperCase().indexOf("TEACHER") > -1 || msg.toUpperCase().indexOf("TSUNG-YING") > -1 || msg.toUpperCase().indexOf("PROFESSOR") > -1 || msg.toUpperCase().indexOf("TSUNG-YING") > -1 || msg.toUpperCase().indexOf("VICTOR") > -1 || msg.toUpperCase().indexOf("DARCY"))
         {
             var u = randomNum(replyToDOYOULIKE.length,0);
             return replyToDOYOULIKE[u];
@@ -60,6 +62,17 @@ specificQuestions = function(msg)
         } else if (msg.toUpperCase().indexOf("SPANISH") > -1)
         {
             return "Lo siento. No hablo español.";
+        } else if (msg.toUpperCase().indexOf("VIETNAMESE") > -1)
+        {
+            return "Tội khong biết díng Việt.";
+        } else {
+            var u = randomNum(2,0);
+            if (u%2 == 0)
+            {
+                return "";
+            } else {
+                return "No.";
+            }
         }
     }
     
