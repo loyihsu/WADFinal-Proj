@@ -89,6 +89,12 @@ var processMsg = function(msg) {  //請勿變更此行
         processResults = produceAIArticle(msg);
     }
     
+    if (processResults == "")
+    {
+        processResults = ELIZAWhats(msg);
+    }
+    
+    
     if (processResults === "")
     {
         processResults = chooseRandomResponse(msg, msgWordsPOS, emotion, engLexicon);

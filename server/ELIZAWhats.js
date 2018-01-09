@@ -1,0 +1,4 @@
+ELIZAWhats = function(msg)
+{
+    return "";
+}
