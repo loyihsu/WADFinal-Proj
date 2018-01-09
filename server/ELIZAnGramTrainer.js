@@ -10,7 +10,7 @@ produceAIArticle = function (msg)
 };
 
 var generateRandomAIArticle = function() {
-    var randomAIArticle = "", nGramNum = 10;
+    var randomAIArticle = "", nGramNum = 50;
     var allInitialTrigrams = nGramDB.find({trigram1: "#"}).fetch();
     
     var initialTrigram = randomNGramSelection(allInitialTrigrams);

@@ -44,6 +44,7 @@ weatherInfo = function(msg)
           wtDataMsg += "The wind speed is " + wtData.wind.speed + " m/s.";
         } else {
           wtData = wtData.list[23];
+            
           var wtDataMsg = "It's "+ wtData.weather[0].description + " tomorrow, and the expected temperature is "+wtData.main.temp+" C. ";
 
           wtDataMsg += "The maximum temperature tomorrow will be "+ wtData.main.temp_max + " C., and the lowest temperature will be "+wtData.main.temp_min+" C. ";

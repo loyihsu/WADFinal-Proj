@@ -30,6 +30,9 @@ calculator = function(msg)
             {
                 pos = i;
                 break;
+            } else if (i == 0)
+            {
+                pos = i;
             }
         }
         
@@ -43,6 +46,7 @@ calculator = function(msg)
         }
         
         var formula = msg.substring(pos,end);
+        console.log(formula);
         
         try {
             var results = eval(formula);
