@@ -7,15 +7,15 @@ replyToROBOT = [
 replyToHOWDOESITWORK = [
                         "It just works!",
                         "Hmmmm, it works well!",
-                        "00001010110010010010101001010000",
-                        ""
+                        "00001010110010010010101001010000"//,
+                        //""
                         ];
 
 replyToDOYOULIKE = [
                     "Of course!",
                     "Huge fan!",
-                    "It's not important :-)",
-                    ""
+                    "It's not important :-)"//,
+                    //""
                     ];
 
 specificQuestions = function(msg)
