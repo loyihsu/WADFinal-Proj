@@ -1,12 +1,9 @@
-emotionChecker = function(msg)
-{
+emotionChecker = function (msg) {
   var emotion = "neutral";
 
-  if (msg.indexOf("!") > -1)
-  {
+  if (msg.indexOf("!") > -1) {
     emotion = "emotional";
-  } else if (msg.indexOf("?") > -1)
-  {
+  } else if (msg.indexOf("?") > -1) {
     emotion = "suspicious";
   }
 
