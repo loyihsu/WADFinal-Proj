@@ -181,7 +181,7 @@ input {
 
 .container2 {
     position: relative;
-    width: 50%
+    width: 50%;
     z-index: 30;
     margin-left: 500px;
     -webkit-transition: opacity .5s ease-in-out;
